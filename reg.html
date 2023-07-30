@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pg1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stcor.html">Student Center</a></li>
+                <li><a href="reg.html">Registration</a></li>
+                <li><a href="news.html">News</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+          <img src="ab2.png" alt="College Logo">
+          <h1>Kamaraj College of Engineering And Technology</h1>
+          <h4>(AUTONOMOUS)</h4>
+          <div>
+            <img src="ab5.png" width="250px" height="100px" align="right" alt="Accreditation">
+            <img src="ab4.png" width="250px" height="100px"align="right"alt="Counsellling Code">
+            <img src="ab3.png" width="250px" height="100px" align="right" alt="Silver Jubilee">
+          </div>
+          <h5>S.P.G.Chidambara nadar - C.Nagammal Campus</h5>
+          <h5>S.P.G.C. Nagar, K.Vellakulam-625 701, Near Virudhunagar</h5>
+        </div>
+      </header>
+
+    <div class="container">
+        <h1>Course Registration Form</h1>
+        <form id="registrationForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Mechatronics">Mechatronics</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" min="1" max="8" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="reg.js"></script>
+    <footer>
+        <p>&copy; 2023 Student Corner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
